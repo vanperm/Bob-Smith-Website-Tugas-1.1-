@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Browser Tab</title>
+    <title>Bob's Profile</title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
@@ -12,78 +12,73 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
-
-
 <body>
-    <div class="Introduction">
-        <header><h1><i class="fa-solid fa-user"></i>Ivan Pratama</h1></header>
-        <p>Second-year AI student in Indonesia</p>    
 
-        <br>
-        
-        <main>
+  <header class="header">
+    <img class="header-img" src="images-2.jpeg" alt="Bob's Picture" width="265" height="265">
 
-            <section id="about-me"><h2><i class="fa-solid fa-circle-info"></i> About Me</h2></section>
-            <p>I enjoy solving programming problems and turning ideas into useful applications</a>.</p>
-            <p>Created Applications <i style="font-size: 12px;">(clickable)</i>:<a href="https://youtube.com" style="color: red;"><i class="fa-brands fa-youtube"></i></a><a href="https://spotify.com" style="color: #1ED760; background-color: black; border-radius: 3px;"><i class="fa-brands fa-spotify"></i></a></p>
+    <h1 class="header-name">Bob's Smith</h1>
+    <p class="header-tagline">Second-year computing student in Indonesia</p>
 
-            <br>
-        
-            <section id="education"><h2><i class="fa-solid fa-graduation-cap"></i> Education</h2></section>
-            <p>Bachelor of Informatics from <a href="https://www.uph.edu/id/">UPH</a></p>
-            <p>Expected graduation: 2028</p>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-            <br>
-        
-            <div class="logouph"><img src="UPH_LOGO.svg.png" alt="UPH-LOGO" width="320" height="220"></div>
+  <main>
 
-            <br>
+    <section class="block" id="about">
+      <h2 class="block-title">About me</h2>
+      <p>I enjoy(?) solving programming problems and turning ideas into useful web and mobile applications.</p>
+    </section>
 
-            <section id="skills"><h2><i class="fa-solid fa-circle-up"></i> Skills</h2></section>
-        
-            <div class="order-not-meaningful">    
-                <ul>
-                    <li>C++ Fundamentals</li>
-                    <li>Python Fundamentals</li>
-                    <li>Algorithms and Data Structures</li>
-                </ul>
-            </div>
-                <br>
-            <div class="sequence-matter">
-                <ol>
-                <li>Write valid HTML</li>
-                <li>Open it in a Browser</li>
-                <li>Inspect it in DevTools</li>
-                </ol>
-            </div>
-            <br>
+    <section class="block" id="education">
+      <h2 class="block-title">Education</h2>
+      <p class="strong">Bachelor of Computer (S.KOM)</p>
+      <p>Expected graduation: 2028</p>
+    </section>
 
-            <h2><i class="fa-solid fa-book"></i> Course projects</h2>
-                <br>
-                <div class="article">
-                <article>
-                    <h3><i class="fa-solid fa-arrow-right"></i> Image Compression Using SVD</h3>
-                    <p>Shrinks photos by keeping key values.</p>
-                </article>
-                <article>
-                    <h3><i class="fa-solid fa-arrow-right"></i> Data Structures Project</h3>
-                    <p>Compares list and tree lookups.</p>
-                </article>
-                </div>
-            <br>
+    <section class="block" id="skills">
+      <h2 class="block-title">Skills</h2>
+      <ul class="skills-list">
+        <li>C++ programming</li>
+        <li>Python fundamentals</li>
+        <li>Algorithms and data structures</li>
+        <li>Problem solving and debugging</li>
+      </ul>
+    </section>
 
-            <h2><i class="fa-solid fa-address-book"></i> Contact</h2>
-            <p style="font-size: 18px; padding-left: 37px;"><a href="fannitops@gmail.com"><i class="fa-solid fa-arrow-right"></i> fannitops@gmail.com</a></p>
-        </main>
+    <section class="block" id="projects">
+      <h2 class="block-title">Course projects</h2>
 
-            <br>
+      <article class="project">
+        <h3 class="project-title">Image Compression Using SVD</h3>
+        <p>I used Singular Value Decomposition to compress images and compare image quality at different compression levels.</p>
+        <p><span class="strong">Course:</span> Linear Algebra</p>
+        <p><span class="strong">Tools:</span> Python, NumPy, Matplotlib</p>
+      </article>
 
-        <footer>
-            <p><i>Built in Week 1 of Web and Mobile Application Development.</i></p>
+      <article class="project">
+        <h3 class="project-title">Data Structures Course Project</h3>
+        <p>I applied data structures in C++ to organize data and solve a practical problem.</p>
+        <p><span class="strong">Course:</span> Data Structures and Algorithms</p>
+        <p><span class="strong">Language:</span> C++</p>
+      </article>
+    </section>
 
-            <input type="text">
-        </footer>
-    </div>
-</body> 
+    <section class="blockunder" id="contact">
+      <h2 class="block-title">Contact</h2>
+      <p>Email: <a href="bob.smith@example.com">bob.smith@example.com</a></p>
+    </section>
 
+  </main>
+
+  <footer class="footer">
+    <i>Built in Week 1 of Web and Mobile Application Development.</i>
+  </footer>
+
+</body>
 </html>
